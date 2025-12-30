@@ -33,6 +33,7 @@ db.exec(`
 `);
 
 // Seed data if empty
+/*
 const count = db.prepare('SELECT COUNT(*) as count FROM products').get();
 if (count.count === 0) {
   const insert = db.prepare(`
@@ -58,6 +59,7 @@ if (count.count === 0) {
   products.forEach(p => insert.run(...p));
   console.log('Database seeded with sample products');
 }
+  */
 
 // API Endpoints
 // GET /list - Returns all products
